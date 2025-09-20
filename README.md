@@ -7,9 +7,6 @@ It provisions infrastructure and configures pipelines for **multi-environment de
 
 </div>
 
-This project implements a **CI/CD pipeline with AWS CLI & Bash scripting**.  
-It provisions infrastructure and configures pipelines for **multi-environment deployment** (QC and Production).
-
 ## Features
 
 - **Infrastructure as Code (IaC)**
@@ -35,18 +32,15 @@ It provisions infrastructure and configures pipelines for **multi-environment de
 
 ## Project Structure
 
-<details>
-
-├── autoscalinggroup.sh # Launch Template, ASG, ELB, Target Group, Listener
-├── dns.sh # Route53 DNS records
-├── deploy.sh # (qc/prod configs + infra provisioning)
-├── security.sh # SSH key, Secrets Manager, Security Group
-├── conf-prod.sh # Production config
-├── conf-qc.sh # QC config
-├── vpc.sh # VPC, subnets, IGW, route tables
-├── build.sh # CodeBuild project setup
-
-</details>
+├── autoscalinggroup.sh # Launch Template, Auto Scaling Group (ASG), NLB, Target Group, Listener  
+├── dns.sh # Route53 DNS records  
+├── deploy.sh # Orchestrator (QC/Prod configs + infra provisioning)  
+├── security.sh # SSH key, Secrets Manager, Security Group  
+├── conf-prod.sh # Production environment configuration  
+├── conf-qc.sh # QC environment configuration  
+├── vpc.sh # VPC, Subnets, Internet Gateway, Route Tables  
+├── build.sh # CodeBuild project setup  
+└── README.md # Documentation
 
 ## Scripts Execution Order (handled by deploy.sh)
 
