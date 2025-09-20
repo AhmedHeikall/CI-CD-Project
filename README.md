@@ -7,9 +7,6 @@ It provisions infrastructure and configures pipelines for **multi-environment de
 
 </div>
 
-This project implements a **CI/CD pipeline with AWS CLI & Bash scripting**.  
-It provisions infrastructure and configures pipelines for **multi-environment deployment** (QC and Production).
-
 ## Features
 
 - **Infrastructure as Code (IaC)**
