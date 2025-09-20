@@ -1,4 +1,11 @@
+<div align="center">
+
 # AWS CI/CD Infrastructure Automation with Multi-Environment Support
+
+<h3 align="center">This project implements a **CI/CD pipeline with AWS CLI & Bash scripting**.  
+It provisions infrastructure and configures pipelines for **multi-environment deployment** (QC and Production).</h3>
+
+</div>
 
 This project implements a **CI/CD pipeline with AWS CLI & Bash scripting**.  
 It provisions infrastructure and configures pipelines for **multi-environment deployment** (QC and Production).
@@ -28,6 +35,8 @@ It provisions infrastructure and configures pipelines for **multi-environment de
 
 ## Project Structure
 
+<details>
+
 ├── autoscalinggroup.sh # Launch Template, ASG, ELB, Target Group, Listener
 ├── dns.sh # Route53 DNS records
 ├── deploy.sh # (qc/prod configs + infra provisioning)
@@ -36,7 +45,8 @@ It provisions infrastructure and configures pipelines for **multi-environment de
 ├── conf-qc.sh # QC config
 ├── vpc.sh # VPC, subnets, IGW, route tables
 ├── build.sh # CodeBuild project setup
-└── README.md # Documentation
+
+</details>
 
 ## Scripts Execution Order (handled by deploy.sh)
 
