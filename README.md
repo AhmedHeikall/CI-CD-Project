@@ -32,18 +32,15 @@ It provisions infrastructure and configures pipelines for **multi-environment de
 
 ## Project Structure
 
-<details>
+├── autoscalinggroup.sh                                         # Launch Template, ASG, ELB, Target Group, Listener
+├── dns.sh                                                      # Route53 DNS records
+├── deploy.sh                                                   # (qc/prod configs + infra provisioning)
+├── security.sh                                                 # SSH key, Secrets Manager, Security Group
+├── conf-prod.sh                                                # Production config
+├── conf-qc.sh                                                  # QC config
+├── vpc.sh                                                      # VPC, subnets, IGW, route tables
+├── build.sh                                                    # CodeBuild project setup
 
-├── autoscalinggroup.sh # Launch Template, ASG, ELB, Target Group, Listener
-├── dns.sh # Route53 DNS records
-├── deploy.sh # (qc/prod configs + infra provisioning)
-├── security.sh # SSH key, Secrets Manager, Security Group
-├── conf-prod.sh # Production config
-├── conf-qc.sh # QC config
-├── vpc.sh # VPC, subnets, IGW, route tables
-├── build.sh # CodeBuild project setup
-
-</details>
 
 ## Scripts Execution Order (handled by deploy.sh)
 
