@@ -13,7 +13,7 @@ It provisions infrastructure and configures pipelines for **multi-environment de
 
 ### AWS CI/CD Infrastructure Automation Architecture
 
-(./assets/Iac-diagram.png)
+![CI/CD](./assets/Iac-diagram.png)
 
 </div>
 
